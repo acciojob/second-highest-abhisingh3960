@@ -1,12 +1,13 @@
 function secondHighest(arr) {
     // Handle edge cases
+	
     if (arr.length < 2) return -Infinity;
     
     let highest = -Infinity;
     let secondHighest = -Infinity;
     
     for (let i = 0; i < arr.length; i++) {
-        let num = Number(arr[i]); // Convert input to a number
+        let num = arr[i]; // Convert input to a number
         if (num > highest) {
             secondHighest = highest;
             highest = num;
@@ -14,8 +15,11 @@ function secondHighest(arr) {
             secondHighest = num;
         }
     }
-    
-    return secondHighest === -Infinity ? -Infinity : secondHighest;
+
+
+	
+	
+    return secondHighest == -Infinity ? -Infinity : secondHighest;
 }
 
 function Main() {
