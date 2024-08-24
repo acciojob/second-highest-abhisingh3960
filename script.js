@@ -2,6 +2,7 @@ function secondHighest(arr) {
 			// If the array is empty, has only 1 element, or all elements are the same, return -Infinity
 			if (arr.length < 2) {
 				return -Infinity;
+				
 			}
 			
 			// Remove duplicate elements by converting the array to a Set and back to an array
